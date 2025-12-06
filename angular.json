@@ -96,11 +96,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "dir": "dist/portfolio_V2",
-            "baseHref": "/portfolio_V2/"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
