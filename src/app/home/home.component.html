@@ -1,11 +1,384 @@
-<h2 class="home-author">Hi. I'm Rohith, <span id="dynamic-text">{{ dynamicText }}</span></h2>
-<span>
-    Tech enthusiast passionate about software development, cybersecurity,
-    and cloud computing. Seeking opportunities to grow as a developer and
-    contribute to impactful projects. gang gang
-</span>
-<!-- <button>
-            <a routerLink="/portfolio"  class="a-green">
-                > Check Portfolio
-            </a>
-        </button> -->
+<!-- ***** 00. NavBar & Header(Intro) ***** -->
+<header class="header" role="banner" id="top">
+    <div class="row">
+        <nav class="nav" role="navigation">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">My projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__text-box row">
+        <div class="header__text">
+            <h1 class="heading-primary home-author">
+                Hi. I'm Test-User, <span id="dynamic-text">{{ dynamicText }}</span>
+            </h1>
+
+            <p style="font-size: X-large;">Tech enthusiast passionate about software development, cybersecurity, and
+                cloud computing. Seeking opportunities to grow as a developer and contribute to impactful projects.</p>
+            <a href="#contact" class="btn btn--purple">Get in touch</a>
+        </div>
+    </div>
+</header>
+
+<!-- ***** 01. About ***** -->
+<main role="main">
+    <section class="about" id="about">
+        <div class="row">
+            <h2>01. About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        I am an enthusiastic Information Technology student at Temasek Polytechnic, graduating in April
+                        2026 with
+                        a strong academic record (CGPA 3.84). With a solid foundation in application development,
+                        cybersecurity, cloud
+                        computing, data analysis, and machine learning, I have honed my skills in full-stack web
+                        development, UI/UX design,
+                        and database management.
+                    </p>
+                    <p>
+                        Passionate about solving complex problems and creating impactful digital solutions, I strive to
+                        contribute to
+                        innovative projects that push the boundaries of technology while continuously growing as a
+                        software engineer.
+                        Whether collaborating in a team or working independently, I bring creativity, adaptability, and
+                        a commitment to excellence.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://your-resume-link.com" class="btn">My Resume</a>
+                        <a href="https://your-profile-link.com" class="btn btn-secondary">Connect with me</a>
+                    </div>
+                </div>
+
+                <div class="about__photo-container">
+                    <img class="about__photo" src="../../assets/images/About_me.jpg" alt="About Me" />
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ***** 02. My Projects ***** -->
+<section class="projects" id="projects">
+    <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+            <!-- Each div with the work__box class is a project. -->
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>BookTrack: Your Library, Perfectly Tracked</h3>
+                    <p>
+                        The app lets administrators manage the library’s collection, track book borrowings, and update
+                        book
+                        details.
+                        It includes automated testing for both backend and frontend, with data stored in MongoDB Atlas.
+                    </p>
+                    <ul class="work__list">
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>MongoDB Atlas</li>
+                    </ul>
+                    <div class="work__links">
+                        <a href="https://github.com/guyidk/BookTrack_DevOps_Project" class="link__text">
+                            Github Repo <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="work__image-box">
+                    <img src="../../assets/images/BookTrack_demo.gif" alt="Project 1" />
+                </div>
+            </div>
+
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Mobile App Development with Flutter</h3>
+                    <p>
+                        I developed a mobile app using Adobe XD for design and Flutter/Dart for functionality, aimed at
+                        tracking
+                        food inventory and expiration dates to reduce waste. It integrates Firebase for backend services
+                        and
+                        offers
+                        a user-friendly interface with list/calendar views, notifications, and purchase reminders,
+                        showcasing my
+                        mobile development skills and commitment to minimizing food waste.
+                    </p>
+                    <ul class="work__list">
+                        <li>Dart</li>
+                        <li>Flutter</li>
+                        <li>Firebase</li>
+                    </ul>
+
+                    <div class="work__links">
+                        <a href="https://github.com/guyidk/Expiro_rohith" class="link__text">
+                            Github Repo <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="work__image-box">
+                    <img src="../../assets/images/Expiro_Demo.gif" alt="Project 1" />
+                </div>
+            </div>
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Automated Testing with GitHub Actions and Jest</h3>
+                    <p>
+                        Developed a robust automated testing pipeline using GitHub Actions and Jest, incorporating
+                        stubbing to
+                        isolate dependencies and ensure accurate test results. This setup streamlined continuous
+                        integration,
+                        providing efficient, reliable testing and enhancing overall code quality throughout the
+                        development
+                        process.
+                    </p>
+                    <ul class="work__list">
+                        <li>Jest</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="work__image-box">
+                    <img src="../../assets/images/Backend_Testing_Demo.gif" alt="Project 1" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ***** 03. My Skills ***** -->
+<section class="skills" id="skills">
+
+    <div class="row">
+        <h2>My Skills</h2>
+        <div class="work__boxes">
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Education</h3>
+                    <p>
+                        I have consistently maintained strong academic performance with a CGPA of 3.78 while actively
+                        participating
+                        in co-curricular activities. As Vice President of the Information Technology Student Interest
+                        Group, I
+                        have
+                        honed my leadership and teamwork skills. Through workshops, events, and volunteering, I have
+                        developed a
+                        well-rounded skill set and a proactive approach to learning and growth.
+                    </p>
+                    <div class="work__links_g">
+                        <a href="#" class="btn" id="viewgrades">Explore education</a>
+                    </div>
+                </div>
+                <div class="work__image-box">
+                    <img src="../../assets/images/Grades.png" class="work__image" alt="Project 1" />
+                </div>
+            </div>
+
+            <div class="modal_g" id="imageModal_g">
+                <div class="modal-content_g">
+                    <span class="close_g">&times;</span>
+                    <img id="modalImage_g" src="../../assets/images/Certification.gif" alt="Grades" />
+                    <a class="prev_g">&#10094;</a>
+                    <a class="next_g">&#10095;</a>
+                </div>
+            </div>
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Technical Skills</h3>
+                    <div class="row">
+                        <div class="technicalSkillsHexes">
+                            <h1 class="section-title">Programming Languages</h1>
+                            <div class="hex-grid sixpr">
+                                <div class="hex"><img src="../../assets/images/JavaScript-logo.png" alt="JavaScript">
+                                </div>
+                                <div class="hex"><img src="../../assets/images/typescript.svg" alt="TypeScript"></div>
+                                <div class="hex"><img src="../../assets/images/python-logo.png" alt="Python"></div>
+                                <div class="hex"><img src="../../assets/images/Dart_logo.png" alt="Dart"></div>
+                                <div class="hex"><img src="../../assets/images/React-Logo.png" alt="React JS"></div>
+                                <div class="hex"><img src="../../assets/images/Angular_logo.png" alt="Angular JS"></div>
+                            </div>
+
+                            <div class="hex-grid fivepr">
+                                <div class="hex"><img src="../../assets/images/Node-logo.png" alt="Node.js"></div>
+                                <div class="hex"><img src="../../assets/images/Expressjs-logo.png" alt="Express.js">
+                                </div>
+                                <div class="hex"><img src="../../assets/images/flutter-logo.svg" alt="Flutter"></div>
+                                <div class="hex"><img src="../../assets/images/MySQL-Logo.png" alt="MySQL"></div>
+                                <div class="hex"><img src="../../assets/images/MongoDB-logo.png" alt="MongoDB"></div>
+                            </div>
+
+                            <h1 class="section-title">Cloud Services</h1>
+                            <div class="hex-grid threepr">
+                                <div class="hex"><img src="../../assets/images/AWS-Logo.png" alt="AWS"></div>
+                                <div class="hex"><img src="../../assets/images/Firbase-logo.png" alt="Firebase"></div>
+                                <div class="hex"><img src="../../assets/images/Azure-Logo.png" alt="Azure"></div>
+                            </div>
+
+                            <h1 class="section-title">Tools & Platforms</h1>
+                            <div class="hex-grid fivepr">
+                                <div class="hex"><img src="../../assets/images/github.svg" alt="GitHub"></div>
+                                <div class="hex"><img src="../../assets/images/Docker-Logo-2013.png" alt="Docker"></div>
+                                <div class="hex"><img src="../../assets/images/Jenkins_logo.png" alt="Jenkins"></div>
+                                <div class="hex"><img src="../../assets/images/New_Power_BI_Logo.svg.png"
+                                        alt="Power BI"></div>
+                                <div class="hex"><img src="../../assets/images/Knime-Logo.png" alt="KNIME"></div>
+                            </div>
+
+                            <div class="hex-grid fourpr">
+                                <div class="hex"><img src="../../assets/images/Wireshark-logo.png" alt="Wireshark">
+                                </div>
+                                <div class="hex"><img src="../../assets/images/VMBox-Logo.png" alt="Virtual Machine">
+                                </div>
+                                <div class="hex"><img src="../../assets/images/Adobe_XD-logo.png" alt="Adobe XD"></div>
+                                <div class="hex"><img src="../../assets/images/Microsoft_Office_logo.png"
+                                        alt="Microsoft Office Suite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>My Certifications</h3>
+                    <div class="swiper mySwiper container">
+                        <div class="swiper-wrapper content">
+                                    <!-- AWS Certification -->
+                                    <!-- <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <img src="../../assets/images/aws-certified-cloud-practitioner.png"
+                                        class="company-img">
+                                    <div class="Cert-Details">
+                                        <div class="name"> AWS Certified Cloud Practitioner (CLF-C02)</div>
+                                        <div class="Issued-Date">Issued: Sep 2024 - Expires: Sep 2027</div>
+                                        <div class="Description">Demonstrates foundational knowledge of AWS cloud
+                                            concepts, core
+                                            services,
+                                            security, pricing, and cloud computing best practices.</div>
+                                    </div>
+                                    <div class="button">
+                                        <a href="https://www.credly.com/badges/b2f3420d-69cc-4e9e-ba77-5e3743862460/linked_in_profile"
+                                            class="black-gradient">View Credential</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                                    <!-- KNIME Certification -->
+                                    <!-- <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <img src="../../assets/images/Knime-Logo.png" class="company-img">
+                                    <div class="Cert-Details">
+                                        <div class="name">Basic Proficiency in KNIME Analytics Platform (L1)</div>
+                                        <div class="Issued-Date">Issued: Aug 2023</div>
+                                        <div class="Description">Validates skills in data access, cleaning,
+                                            transformation, merging,
+                                            visualization, and workflow automation using KNIME.</div>
+                                    </div>
+                                    <div class="button">
+                                        <a href="https://www.credly.com/badges/88f2e8cc-2a93-4f95-8efc-7a971373fa11/linked_in_profile"
+                                            class="black-gradient">View Credential</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                                    <!-- Python Institute Certification -->
+                                    <!-- <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <img src="../../assets/images/Python-institute-Logo.png" class="company-img">
+                                    <div class="Cert-Details">
+                                        <div class="name"> OpenEDG Python Institute: Professional Certificate</div>
+                                        <div class="Issued-Date">Issued: Feb 2024</div>
+                                        <div class="Description">Certifies proficiency in Python programming, including
+                                            syntax, data
+                                            structures, object-oriented programming, and application development.</div>
+                                    </div>
+                                    <div class="button">
+                                        <a href="https://www.linkedin.com/learning/certificates/5cd86aea5aa40d10ef87ef1d560da4f432f00e36a256d83c131f055a1547ad32?u=76881922"
+                                            class="black-gradient">View Credential</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                                    <!-- LinkedIn Certifications -->
+                                    <!-- <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <img src="../../assets/images/LinkedIn-Logo.png" class="company-img">
+                                    <div class="Cert-Details">
+                                        <div class="name"> LinkedIn Learning Certifications</div>
+                                        <div class="Description">Completed courses in Full-Stack Python Development,
+                                            Cloud Computing,
+                                            and
+                                            Database Management, gaining expertise in modern development and IT
+                                            practices.</div>
+                                    </div>
+                                    <div class="button">
+                                        <a href="https://www.linkedin.com/in/rohith-parthipan/details/certifications/"
+                                            class="black-gradient">View Credential</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ***** 04. Contact Me ***** -->
+<section class="contact" id="contact">
+    <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+            <p>
+                I’m always excited to connect with like-minded individuals, professionals, and teams who share a passion
+                for
+                technology and innovation. Whether you have a project idea, an internship opportunity, or just want to
+                chat
+                about
+                the latest in tech, feel free to reach out!
+            </p>
+            <!-- Replace the email with yours -->
+            <a href="mailto:Rohithkousi@gmail.com" class="btn">Email me</a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ***** 05. Footer ***** -->
+<footer role="contentinfo" class="footer">
+    <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+            <li class="footer__social-link-item">
+                <a href="https://github.com/guyidk/" title="Link to Github Profile">
+                    <img src="../../assets/images/github.svg" class="footer__social-image" alt="Github">
+                </a>
+            </li>
+            <li class="footer__social-link-item">
+                <a href="https://www.linkedin.com/in/rohith-parthipan/">
+                    <img src="../../assets/images/linkedin.svg" title="Link to Linkedin Profile"
+                        class="footer__social-image" alt="Linkedin">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- ***** 06. To top arrow ***** -->
+<a href="#top" class="back-to-top" title="Back to Top">
+    <img src="../../assets/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+</a>
