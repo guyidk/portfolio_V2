@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   dynamicText: string = "";
   phrases: string[] = [
-    "Team Player.",
-    "Software Developer.",
-    "Backend Engineer.",
-    "Software Engineer.",
     "Fullstack Developer.",
+    "Software Engineer.",
+    "Backend Engineer.",
+    "Software Developer.",
     "Code Enthusiast.",
+    "Team Player.",
   ];
 
   currentPhraseIndex: number = 0;

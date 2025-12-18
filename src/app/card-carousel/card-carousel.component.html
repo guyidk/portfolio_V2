@@ -1,0 +1,62 @@
+<section class="skills" id="skills">
+
+  <div class="row">
+    <h2>My Skills</h2>
+    <div class="work__text">
+      <h3>My Certifications</h3>
+      <div class="carousel-wrapper">
+
+        <button class="nav-arrow left" (click)="scrollPrev()">
+          &#10094;
+        </button>
+
+        <div class="certifications-row" #carousel (mouseenter)="stopAutoScroll()" (mouseleave)="startAutoScroll()">
+          <ng-container *ngFor="let certs of certsList">
+
+            <div class="card">
+              <div class="card-content">
+                <img [src]=certs.img class="company-img">
+                <div class="Cert-Details">
+                  <div class="name">{{ certs.name }}</div>
+                  <div class="Issued-Date">{{ certs.issueDate }}</div>
+                  <div class="Description">{{ certs.description }}</div>
+                </div>
+                <div class="button">
+                  <a [href]=certs.link class="black-gradient">View Credential</a>
+                </div>
+              </div>
+            </div>
+
+          </ng-container>
+        </div>
+
+        <button class="nav-arrow right" (click)="scrollNext()">
+          &#10095;
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 
+<section>
+  <swiper-container [loop]="true" [navigation]="true">
+    <ng-container *ngFor="let certs of certsList">
+      <swiper-slide>
+        <div class="card">
+          <div class="card-content">
+            <img [src]=certs.img class="company-img">
+            <div class="Cert-Details">
+              <div class="name">{{ certs.name }}</div>
+              <div class="Issued-Date">{{ certs.issueDate }}</div>
+              <div class="Description">{{ certs.description }}</div>
+            </div>
+            <div class="button">
+              <a [href]=certs.link class="black-gradient">View Credential</a>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </ng-container>
+  </swiper-container>
+</section> -->
