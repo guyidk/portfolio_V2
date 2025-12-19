@@ -255,74 +255,23 @@
                 <div class="work__text">
                     <h3>My Certifications</h3>
                     <div class="certifications-row">
-                        <!-- AWS Certification -->
-                        <div class="card">
+                        <ng-container *ngFor="let certs of certsList">
+
+                            <div class="card">
                             <div class="card-content">
-                                <img src="assets/images/aws-certified-cloud-practitioner.png" class="company-img">
+                                <img [src]="certs.img" class="company-img">
                                 <div class="Cert-Details">
-                                    <div class="name">AWS Certified Cloud Practitioner (CLF-C02)</div>
-                                    <div class="Issued-Date">Issued: Sep 2024 - Expires: Sep 2027</div>
-                                    <div class="Description">Demonstrates foundational knowledge of AWS cloud concepts,
-                                        core services, security, pricing, and cloud computing best practices.</div>
+                                    <div class="name">{{certs.name}}</div>
+                                    <div class="Issued-Date">{{certs.issueDate}}</div>
+                                    <div class="Description">{{certs.description}}</div>
                                 </div>
                                 <div class="button">
-                                    <a href="https://www.credly.com/badges/b2f3420d-69cc-4e9e-ba77-5e3743862460/linked_in_profile"
+                                    <a [href]="certs.link"
                                         class="black-gradient">View Credential</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- KNIME Certification -->
-                        <div class="card">
-                            <div class="card-content">
-                                <img src="assets/images/Knime-Logo.png" class="company-img">
-                                <div class="Cert-Details">
-                                    <div class="name">Basic Proficiency in KNIME Analytics Platform (L1)</div>
-                                    <div class="Issued-Date">Issued: Aug 2023</div>
-                                    <div class="Description">Validates skills in data access, cleaning, transformation,
-                                        merging, visualization, and workflow automation using KNIME.</div>
-                                </div>
-                                <div class="button">
-                                    <a href="https://www.credly.com/badges/88f2e8cc-2a93-4f95-8efc-7a971373fa11/linked_in_profile"
-                                        class="black-gradient">View Credential</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Python Institute Certification -->
-                        <div class="card">
-                            <div class="card-content">
-                                <img src="assets/images/Python-institute-Logo.png" class="company-img">
-                                <div class="Cert-Details">
-                                    <div class="name">OpenEDG Python Institute: Professional Certificate</div>
-                                    <div class="Issued-Date">Issued: Feb 2024</div>
-                                    <div class="Description">Certifies proficiency in Python programming, including
-                                        syntax, data structures, object-oriented programming, and application
-                                        development.</div>
-                                </div>
-                                <div class="button">
-                                    <a href="https://www.linkedin.com/learning/certificates/5cd86aea5aa40d10ef87ef1d560da4f432f00e36a256d83c131f055a1547ad32?u=76881922"
-                                        class="black-gradient">View Credential</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- LinkedIn Certifications -->
-                        <!-- <div class="card">
-                            <div class="card-content">
-                                <img src="assets/images/LinkedIn-Logo.png" class="company-img">
-                                <div class="Cert-Details">
-                                    <div class="name">LinkedIn Learning Certifications</div>
-                                    <div class="Description">Completed courses in Full-Stack Python Development, Cloud
-                                        Computing, and Database Management, gaining expertise in modern development and
-                                        IT practices.</div>
-                                </div>
-                                <div class="button">
-                                    <a href="https://www.linkedin.com/in/rohith-parthipan/details/certifications/"
-                                        class="black-gradient">View Credential</a>
-                                </div>
-                            </div>
-                        </div> -->
+                        </ng-container>
                     </div>
                 </div>
             </div>
@@ -336,6 +285,7 @@
 <section class="MyWorkExp" id="MyWorkExp">
     <div class="row">
         <h2>My Work Experience</h2>
+        <h3 style="margin:0% !important;">DBS internship - (1 Apr 2025 to 31 Mar 2026)</h3>
         <div class="about__content">
             <div class="about__text">
                 <p>
@@ -367,9 +317,8 @@
     </div>
 </section>
 
-<!-- ***** 05. Contact Me ***** -->
+<!-- ***** Contact Me ***** -->
 <section class="contact" id="contact">
-
     <div style="max-width: var(--container-max-width); margin: 0 auto;">
         <h2>Get in Touch</h2>
 
@@ -382,6 +331,29 @@
                     Whether you have a project idea, an internship opportunity,
                     or just want to chat about the latest in tech, feel free to reach out!
                 </p>
+
+                <ul class="contact-info">
+                    <li>
+                        <span>Email: </span>
+                        <a href="mailto:rohithkousi@gmail.com">rohithkosui&#64;gmail.com</a>
+                    </li>
+                    <li>
+                        <span>Location: </span>
+                        <a>Singapore</a>
+                    </li>
+                </ul>
+
+
+                <!-- Social links (moved here) -->
+                <div class="contact-socials">
+                    <a href="https://github.com/guyidk/" aria-label="GitHub">
+                        <img src="assets/images/github.svg" alt="GitHub" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rohith-parthipan/" aria-label="LinkedIn">
+                        <img src="assets/images/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                </div>
             </div>
 
             <!-- Form -->
@@ -406,30 +378,9 @@
                 </button>
             </form>
         </div>
-
     </div>
 </section>
 
-
-<!-- ***** 05. Footer ***** -->
-<footer role="contentinfo" class="footer">
-    <div class="row">
-        <!-- Update the links to point to your accounts -->
-        <ul class="footer__social-links">
-            <li class="footer__social-link-item">
-                <a href="https://github.com/guyidk/" title="Link to Github Profile">
-                    <img src="assets/images/github.svg" class="footer__social-image" alt="Github">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://www.linkedin.com/in/rohith-parthipan/">
-                    <img src="assets/images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-                        alt="Linkedin">
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
 
 <!-- ***** 06. To top arrow ***** -->
 <a href="#top" class="back-to-top" title="Back to Top">

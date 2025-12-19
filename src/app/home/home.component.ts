@@ -17,6 +17,20 @@ export class HomeComponent implements OnInit {
     "Team Player.",
   ];
 
+  certsList = [{
+    img: "assets/images/aws-certified-cloud-practitioner.png", name: "AWS Certified Cloud Practitioner (CLF-C02)", issueDate: "Issued: Sep 2024 - Expires: Sep 2027", description: `Demonstrates foundational knowledge of AWS cloud concepts,
+                  core services, security, pricing, and cloud computing best practices.`, link: "https://www.credly.com/badges/b2f3420d-69cc-4e9e-ba77-5e3743862460/linked_in_profile"
+  },
+  {
+    img: "assets/images/Knime-Logo.png", name: "Basic Proficiency in KNIME Analytics Platform (L1)", issueDate: "Issued: Aug 2023", description: `Validates skills in data access, cleaning, transformation,
+                  merging, visualization, and workflow automation using KNIME.`, link: "https://www.credly.com/badges/88f2e8cc-2a93-4f95-8efc-7a971373fa11/linked_in_profile"
+  },
+  {
+    img: "assets/images/Python-institute-Logo.png", name: "OpenEDG Python Institute: Professional Certificate", issueDate: "Issued: Feb 2024", description: `Certifies proficiency in Python programming, including
+                  syntax, data structures, object-oriented programming, and application development.`, link: "https://www.linkedin.com/learning/certificates/5cd86aea5aa40d10ef87ef1d560da4f432f00e36a256d83c131f055a1547ad32?u=76881922"
+  },
+  ]
+
   currentPhraseIndex: number = 0;
   currentCharIndex: number = 0;
   isDeleting: boolean = false;

@@ -33,8 +33,7 @@
 
 .certifications-row {
   display: flex;
-  gap: 20px; /* space between cards */
-//   overflow-x: auto; /* scroll if too many cards */
+  gap: 20px; 
   padding-bottom: 10px;
 }
 
@@ -71,14 +70,6 @@
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
-}
-
-.certifications-row {
-  display: flex;
-  gap: 20px;
-//   overflow-x: scroll;
-//   scroll-snap-type: x mandatory;
-//   -webkit-overflow-scrolling: touch;
 }
 
 .card {
@@ -834,4 +825,49 @@ body:not(.user-is-tabbing) a:focus {
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+//-----
+/* Social icons inside contact text */
+
+.contact-socials {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-socials a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-socials img {
+  height: 4.5rem;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.contact-socials img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Center icons on mobile */
+@media (max-width: 900px) {
+  .contact-socials {
+    justify-content: center;
+  }
+}
+
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.contact-info li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
