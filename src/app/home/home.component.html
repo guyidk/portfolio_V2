@@ -6,6 +6,7 @@
                 <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">My projects</a></li>
                 <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"><a href="#MyWorkExp" class="nav__link">My Work Experience</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
             </ul>
         </nav>
@@ -27,7 +28,7 @@
 <main role="main">
     <section class="about" id="about">
         <div class="row">
-            <h2>01. About Me</h2>
+            <h2>About Me</h2>
             <div class="about__content">
                 <div class="about__text">
                     <p>
@@ -48,8 +49,10 @@
                         a commitment to excellence.
                     </p>
                     <div class="buttons">
-                        <a href="https://drive.google.com/file/d/1MuYkE82Kj9saYToj0f-qw5AV_QT1Np_9/view?usp=drive_link" class="btn">My Resume</a>
-                        <a href="https://www.linkedin.com/in/rohith-parthipan/" class="btn btn-secondary">Connect with me</a>
+                        <a href="https://drive.google.com/file/d/1MuYkE82Kj9saYToj0f-qw5AV_QT1Np_9/view?usp=drive_link"
+                            class="btn">My Resume</a>
+                        <a href="https://www.linkedin.com/in/rohith-parthipan/" class="btn btn-secondary">Connect with
+                            me</a>
                     </div>
                 </div>
 
@@ -174,7 +177,8 @@
                         well-rounded skill set and a proactive approach to learning and growth.
                     </p>
                     <div class="work__links_g">
-                        <a href="https://drive.google.com/file/d/1jrO3jjmhob8PLeWnVTuDKYw6XyLeNFnT/view?usp=sharing" class="btn" id="viewgrades">Explore education</a>
+                        <a href="https://drive.google.com/file/d/1jrO3jjmhob8PLeWnVTuDKYw6XyLeNFnT/view?usp=sharing"
+                            class="btn" id="viewgrades">Explore education</a>
                     </div>
                 </div>
                 <div class="work__image-box">
@@ -328,25 +332,84 @@
     </div>
 </section>
 
-<!-- ***** 04. Contact Me ***** -->
-<section class="contact" id="contact">
+<!-- ***** 04. My Work Experience ***** -->
+<section class="MyWorkExp" id="MyWorkExp">
     <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-            <p>
-                I’m always excited to connect with like-minded individuals, professionals, and teams who share a passion
-                for
-                technology and innovation. Whether you have a project idea, an internship opportunity, or just want to
-                chat
-                about
-                the latest in tech, feel free to reach out!
-            </p>
-            <!-- Replace the email with yours -->
-            <a href="mailto:Rohithkousi@gmail.com" class="btn">Email me</a>
+        <h2>My Work Experience</h2>
+        <div class="about__content">
+            <div class="about__text">
+                <p>
+                    During my internship, I helped develop financial management portals using Node.js, Angular,
+                    TypeScript, JavaScript, and SQL.
+                    I built dashboards, APIs with OAuth authentication, automation scripts, and worked with tools such
+                    as PuTTY, Drone,
+                    and Jenkins for deployments. I translated business requirements into scalable solutions, improving
+                    both frontend usability and
+                    backend performance through optimized queries, data validation, and responsive UI design. I also
+                    applied Angular, ng-zorro, and
+                    Sequelize to build interactive, data-driven features like region-based views and CSV processing.
+                </p>
+                <p>
+                    Beyond technical work, I strengthened my communication and problem-solving skills through regular
+                    syncs with stakeholders and team
+                    members. Adapting to feedback, documenting my work, and collaborating across teams taught me how
+                    large organizations operate and
+                    sharpened my ability to deliver reliable, user-focused software. This experience significantly
+                    deepened my full-stack development
+                    skills and professional confidence.
+                </p>
+            </div>
 
+            <div class="about__photo-container">
+                <img class="about__photo" src="assets/images/DBS_AsianHub.jpg" alt="About Me" />
+            </div>
         </div>
     </div>
 </section>
+
+<!-- ***** 05. Contact Me ***** -->
+<section class="contact" id="contact">
+
+    <div style="max-width: var(--container-max-width); margin: 0 auto;">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-wrapper">
+            <!-- Text -->
+            <div class="contact-text">
+                <p>
+                    I’m always excited to connect with like-minded individuals, professionals,
+                    and teams who share a passion for technology and innovation.
+                    Whether you have a project idea, an internship opportunity,
+                    or just want to chat about the latest in tech, feel free to reach out!
+                </p>
+            </div>
+
+            <!-- Form -->
+            <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input id="name" type="text" name="name" ngModel required placeholder="John Doe" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input id="email" type="email" name="email" ngModel required placeholder="john@email.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" ngModel required placeholder="Leave a message..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
 
 <!-- ***** 05. Footer ***** -->
 <footer role="contentinfo" class="footer">

@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   deletingSpeed: number = 100;
   delayBetweenPhrases: number = 2000;
 
-    ngOnInit(): void {
+  ngOnInit(): void {
     this.type();
   }
 
@@ -50,5 +50,21 @@ export class HomeComponent implements OnInit {
       setTimeout(() => this.type(), speed);
     }
   }
+
+  onSubmit(form: any) {
+    const { name, email, message } = form.value;
+
+    const subject = `Email from ${name} – Portfolio Website`;
+
+    const body = `${message}`;
+
+    const mailtoLink =
+      `mailto:rohithkousi@gmail.com` +
+      `?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+  }
+
 
 }

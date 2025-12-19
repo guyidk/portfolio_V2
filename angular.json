@@ -23,7 +23,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
-           "options": {
+          "options": {
             "outputPath": "dist/portfolio_V2",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -54,8 +54,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "20kb",
+                  "maximumError": "20kb"
                 }
               ],
               "outputHashing": "all"
