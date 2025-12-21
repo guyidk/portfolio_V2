@@ -248,3 +248,55 @@ h3 {
 .hex-grid.threepr {
     grid-template-columns: repeat(3, 1fr);
 }
+
+
+//----- TOOL-TIP -----
+
+/* Dark Tooltip (default) */
+.skill-tooltip {
+  background: linear-gradient(135deg, #1f2933, #111827); /* dark gradient */
+  color: #f9fafb; /* light text */
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: 0.4px;
+}
+
+/* Light Tooltip */
+.skill-tooltip.light {
+  background: #ffffff; /* white background */
+  color: #111827;      /* dark text */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Tooltip arrow */
+.skill-tooltip::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  transform: rotate(45deg);
+  bottom: -4px;
+  left: 50%;
+  margin-left: -4px;
+}
+
+/* Optional fade + scale animation */
+.mat-tooltip {
+  animation: tooltipFadeIn 120ms ease-out;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
