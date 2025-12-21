@@ -29,6 +29,10 @@ export class HomeComponent implements OnInit {
     img: "assets/images/Python-institute-Logo.png", name: "OpenEDG Python Institute: Professional Certificate", issueDate: "Issued: Feb 2024", description: `Certifies proficiency in Python programming, including
                   syntax, data structures, object-oriented programming, and application development.`, link: "https://www.linkedin.com/learning/certificates/5cd86aea5aa40d10ef87ef1d560da4f432f00e36a256d83c131f055a1547ad32?u=76881922"
   },
+  // {
+  //   img: "assets/images/LinkedIn-Logo.png", name: "LinkedIn Learning Certifications", description: `Completed courses in Full-Stack Python Development, Cloud
+  //   Computing, and Database Management, gaining expertise in modern development and IT practices.`, link: "https://www.linkedin.com/in/rohith-parthipan/details/certifications/"
+  // },
   ]
 
   currentPhraseIndex: number = 0;

@@ -301,7 +301,9 @@
                                     <img [src]="certs.img" class="company-img">
                                     <div class="Cert-Details">
                                         <div class="name">{{certs.name}}</div>
-                                        <div class="Issued-Date">{{certs.issueDate}}</div>
+                                        <ng-container *ngIf="certs.issueDate">
+                                            <div class="Issued-Date">{{certs.issueDate}}</div>
+                                        </ng-container>
                                         <div class="Description">{{certs.description}}</div>
                                     </div>
                                     <div class="button">
