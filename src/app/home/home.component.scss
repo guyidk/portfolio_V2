@@ -871,3 +871,7 @@ body:not(.user-is-tabbing) a:focus {
   gap: 1rem;
   margin-bottom: 0.8rem;
 }
+
+::placeholder {
+  color: #ddd7e1; /* your color */
+}
