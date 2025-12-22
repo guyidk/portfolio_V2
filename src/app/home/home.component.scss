@@ -875,3 +875,19 @@ body:not(.user-is-tabbing) a:focus {
 ::placeholder {
   color: #ddd7e1; /* your color */
 }
+
+// For videos
+
+.work__video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px; /* optional */
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work__video {
+    display: none;
+  }
+}
