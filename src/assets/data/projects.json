@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "Diamond Price Predicion App",
+        "description": "This app predicts diamond prices based on features like cut and clarity. It was built to practice training and deploying a machine learning model with Streamlit. Using data from Hugging Face, multiple models were evaluated, and GradientBoostingRegressor was selected based on performance metrics such as MSE(mean square error), MAE(mean absolute error), and R².",
+        "techstack": ["Python", "Pandas", "Streamlit", "scikit-learn"],
+        "img":"",
+        "vid": "assets/videos/diamond_price_predictor_sample.mp4",
+        "github": "https://github.com/guyidk/diamonds-price_prediction-app",
+        "live": "https://diamonds-ml-apppy-gf5vhhmbb2xd5ifbidvm47.streamlit.app"
+    },
+    {
+        "id": "2",
+        "title": "Mobile App Development with Flutter",
+        "description": "I developed a mobile app using Adobe XD for design and Flutter/Dart for functionality, aimed at tracking food inventory and expiration dates to reduce waste. It integrates Firebase for backend services and offers a user-friendly interface with list/calendar views, notifications, and purchase reminders, showcasing my mobile development skills and commitment to minimizing food waste.",
+        "techstack": ["Dart", "Flutter", "Firebase", "scikit-learn"],
+        "img":"",
+        "vid": "assets/videos/diamond_price_predictor_sample.mp4",
+        "github": "https://github.com/guyidk/Expiro_rohith",
+        "live": ""
+    }
+]

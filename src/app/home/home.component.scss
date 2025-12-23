@@ -891,3 +891,29 @@ body:not(.user-is-tabbing) a:focus {
     display: none;
   }
 }
+
+//-Project Header-
+.projects__header {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    margin-bottom: var(--gutter-small);
+}
+
+.projects__all-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.projects__all-link:hover {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.projects__footer {
+    margin-top: 4rem;
+    text-align: center;
+}

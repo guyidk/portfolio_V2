@@ -1,0 +1,13 @@
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px; /* optional */
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video {
+    display: none;
+  }
+}
